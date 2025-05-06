@@ -1,0 +1,141 @@
+<html>
+<body>
+<title>Himalaya Tenant Payment Update</title>
+<style>
+body {
+  background-color: #b3e6ff;
+}
+hr.title {
+  border-top: 2px solid black;
+}
+hr.solidB {
+  border-top: 1px solid black;
+}
+hr.solidG {
+  border-top: 1px solid #dfdfdf;
+}
+hr.dashedB {
+  border-top: 1px dashed black;
+}
+hr.dottedG {
+  border-top: 1px dotted gray;
+}
+label {
+  width: 100%;
+  color: black;
+  font-style: normal;
+  font-family: "Arial", Times, serif;
+  font-size:12px;
+}
+text {
+  width: 100%;
+  color: black;
+  font-style: normal;
+  font-family: "Arial", Times, serif;
+  font-size:16px;
+}
+.text-label {
+  color: black;
+  font-style: normal;
+  font-family: "Arial", Times, serif;
+  font-size:18px;
+}
+.text-general {
+  color: black;
+  text-align: right;
+  font-style: normal;
+  font-family: "Arial", Times, serif;
+  font-size:16px;
+}
+.amount-due-date {
+  color: black;
+  font-style: normal;
+  font-family: "Arial", Times, serif;
+  font-size:20px;
+}
+.amount-due {
+  color: red;
+  font-style: normal;
+  font-family: "Ariel", Times, serif;
+  font-size:20px;
+}
+.text-description {
+  font-style: normal;
+  font-family: "Ariel", Times, serif;
+  font-size:16px;
+}
+.text-disclaimer {
+  font-style: normal;
+  font-family: "Verdana", Times, serif;
+  font-size:10px;
+}
+.text-code {
+  width: 100%;
+  color: gray;
+  font-style: normal;
+  font-family: "Arial", Times, serif;
+  font-size:8px;
+}
+</style>
+<img src="{{data['h_logo']}}" height="50" width="50" /><div style="text-align:center;vertical-align:middle;font-size:30px;">Tenant Payment Update</div>
+<hr class="title">
+<label>Date : {{data['statement_date']}}</label>
+<div>&nbsp;</div>
+<div class="text-label">Dear {{data['first_name']}} {{data['last_name']}}</div>
+<div><text>{{data['label']}}</text> </div>
+<div><text>{{data['city']}}&nbsp;&nbsp;{{data['state']}}&nbsp;{{data['zip']}}</text></div>
+<div class="text-description">Account : <label>{{data['account']}}</label></div>
+<br>
+<div class="text-description">
+There have been one or more payments posted on your account. You can see latest information at <a href="https://himalayaproperties.org">https://himalayaproperties.org</a>.
+</div>
+<br>
+<div class="amount-due"><label>Current Balance : $ </label>{{data['amount_due']}}</div>
+<h3>Payment(s) Table</h3>
+<div style="align-content: center;">
+  <table class="table">
+    <tr>
+      <th>Type</th>
+      <th>Date</th>
+      <th>Type</th>
+      <th>Reference</th>
+      <th>Payee</th>
+      <th>Amount</th>
+      <th>&nbsp;</th>
+      <th>Description</th>
+    </tr>
+    {% for csl in data["transactions"] %}
+    <tr class="text-info">
+      <td style="width:25px;text-align:center;">{{ csl["type"] }}</td>
+      <td style="width:80px;text-align:center;">{{ csl["tdate"] }}</td>
+      <td style="width:100px;text-align:right;">{{ csl['ref'] }}</td>
+      <td style="width:150px;text-align:right;">{{ csl['reference'] }}</td>
+      <td style="width:180px;text-align:right;">{{ csl['payee'] }}</td>
+      <td style="width:100px;text-align:right;">{{ csl['credit'] }}</td>
+      <th>&nbsp;</th>
+      <td>{{ csl['description'] }}</td>
+    </tr>
+    {% endfor %}
+  </table> 
+</div>
+<br>
+<u>You can mail Payments to</u>
+<div class="text-label">{{data['company']}}</div>
+<div><label>{{data['company_address']}}</label></div>
+<div><label>{{data['company_address2']}}</label></div>
+<div>&nbsp</div>
+<u>Or Pay Electronically through</u>
+<div><img src="{{data['zelle_logo']}}" height="25" width="45" /> Zelle : <label>payments@himalayaproperties.org</label></div>
+<div><img src="{{data['venmo_logo']}}" height="25" width="25" /> Venmo : <label>@Himalaya-Properties</label></div>
+<div><img src="{{data['cashapp_logo']}}" height="25" width="25" /> Cash App: <label>$HimalayaProperties</label></div>
+<div class="text-description>">Send small payment, if you're using electronic payment for the first time.</div>
+<br>
+<hr class="solidB">
+<label>Disclaimer</label>
+<div class="text-disclaimer">
+The contents of this email and any attachments to it contain confidential and/or legally privileged information from {{data['company_legal_name']}}. This information is only for the use of the intended recipient. If you are not the intended recipient, you are hereby notified that any disclosure, copying, distribution, or the taking of any action in reliance on the contents of the contained information is strictly prohibited and that the documents should be returned to {{data['company_legal_name']}} immediately. In this regard, if you have received this email in error, please notify us immediately. 
+</div>
+<div class="text-code">Reference: {{data['account']}}  {{data['company']}} {{data['company_address']}} {{data['company_address2']}} email: payments@himalayaproperties.org</div>
+</body>
+</html>
+

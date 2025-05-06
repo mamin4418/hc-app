@@ -1,0 +1,96 @@
+2708|INFO|2025-03-18 21:22:58,289|pm-web.py|<module>|L:4026|========= HP Server started ==========
+2708|INFO|2025-03-18 21:22:58,289|pm-web.py|<module>|L:4027|OS: nt  Platform:Windows Config:./files/pm-conf.json
+2708|INFO|2025-03-18 21:22:58,367|_internal.py|_log|L:97|[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:7000
+ * Running on http://172.16.0.24:7000
+2708|INFO|2025-03-18 21:22:58,367|_internal.py|_log|L:97|[33mPress CTRL+C to quit[0m
+2708|INFO|2025-03-18 21:22:58,429|_internal.py|_log|L:97| * Restarting with watchdog (windowsapi)
+12616|INFO|2025-03-18 21:22:59,418|pm-web.py|<module>|L:4026|========= HP Server started ==========
+12616|INFO|2025-03-18 21:22:59,418|pm-web.py|<module>|L:4027|OS: nt  Platform:Windows Config:./files/pm-conf.json
+12616|WARNING|2025-03-18 21:22:59,434|_internal.py|_log|L:97| * Debugger is active!
+12616|INFO|2025-03-18 21:22:59,434|_internal.py|_log|L:97| * Debugger PIN: 142-939-178
+14964|INFO|2025-03-18 21:25:48,250|_internal.py|_log|L:97| * Detected change in 'C:\\Users\\mamin\\anaconda3\\Lib\\site-packages\\OpenSSL\\version.py', reloading
+2708|INFO|2025-03-18 21:25:48,755|_internal.py|_log|L:97| * Restarting with watchdog (windowsapi)
+17004|INFO|2025-03-18 21:25:50,066|pm-web.py|<module>|L:4026|========= HP Server started ==========
+17004|INFO|2025-03-18 21:25:50,067|pm-web.py|<module>|L:4027|OS: nt  Platform:Windows Config:./files/pm-conf.json
+17004|WARNING|2025-03-18 21:25:50,080|_internal.py|_log|L:97| * Debugger is active!
+17004|INFO|2025-03-18 21:25:50,084|_internal.py|_log|L:97| * Debugger PIN: 142-939-178
+4672|INFO|2025-03-18 21:26:24,251|_internal.py|_log|L:97| * Detected change in 'C:\\Users\\mamin\\anaconda3\\Lib\\site-packages\\cryptography\\hazmat\\primitives\\ciphers\\aead.py', reloading
+2708|INFO|2025-03-18 21:26:24,456|_internal.py|_log|L:97| * Restarting with watchdog (windowsapi)
+14788|INFO|2025-03-18 21:26:25,348|pm-web.py|<module>|L:4026|========= HP Server started ==========
+14788|INFO|2025-03-18 21:26:25,348|pm-web.py|<module>|L:4027|OS: nt  Platform:Windows Config:./files/pm-conf.json
+14788|WARNING|2025-03-18 21:26:25,364|_internal.py|_log|L:97| * Debugger is active!
+14788|INFO|2025-03-18 21:26:25,364|_internal.py|_log|L:97| * Debugger PIN: 142-939-178
+17584|INFO|2025-03-18 21:36:38,366|_internal.py|_log|L:97| * Detected change in 'C:\\Users\\mamin\\anaconda3\\Lib\\site-packages\\jedi\\common.py', reloading
+2708|INFO|2025-03-18 21:36:38,774|_internal.py|_log|L:97| * Restarting with watchdog (windowsapi)
+16404|INFO|2025-03-18 21:36:39,566|pm-web.py|<module>|L:4026|========= HP Server started ==========
+16404|INFO|2025-03-18 21:36:39,566|pm-web.py|<module>|L:4027|OS: nt  Platform:Windows Config:./files/pm-conf.json
+16404|WARNING|2025-03-18 21:36:39,575|_internal.py|_log|L:97| * Debugger is active!
+16404|INFO|2025-03-18 21:36:39,577|_internal.py|_log|L:97| * Debugger PIN: 142-939-178
+4928|INFO|2025-03-18 21:37:46,415|_internal.py|_log|L:97| * Detected change in 'C:\\Users\\mamin\\anaconda3\\Lib\\site-packages\\pylint\\message\\__init__.py', reloading
+2708|INFO|2025-03-18 21:37:47,181|_internal.py|_log|L:97| * Restarting with watchdog (windowsapi)
+18016|INFO|2025-03-18 21:37:48,043|pm-web.py|<module>|L:4026|========= HP Server started ==========
+18016|INFO|2025-03-18 21:37:48,043|pm-web.py|<module>|L:4027|OS: nt  Platform:Windows Config:./files/pm-conf.json
+18016|WARNING|2025-03-18 21:37:48,053|_internal.py|_log|L:97| * Debugger is active!
+18016|INFO|2025-03-18 21:37:48,055|_internal.py|_log|L:97| * Debugger PIN: 142-939-178
+16060|INFO|2025-03-18 21:38:34,338|_internal.py|_log|L:97| * Detected change in 'C:\\Users\\mamin\\anaconda3\\Lib\\site-packages\\pylint\\checkers\\classes\\__init__.py', reloading
+2708|INFO|2025-03-18 21:38:34,545|_internal.py|_log|L:97| * Restarting with watchdog (windowsapi)
+9136|INFO|2025-03-18 21:38:35,366|pm-web.py|<module>|L:4026|========= HP Server started ==========
+9136|INFO|2025-03-18 21:38:35,366|pm-web.py|<module>|L:4027|OS: nt  Platform:Windows Config:./files/pm-conf.json
+9136|WARNING|2025-03-18 21:38:35,376|_internal.py|_log|L:97| * Debugger is active!
+9136|INFO|2025-03-18 21:38:35,377|_internal.py|_log|L:97| * Debugger PIN: 142-939-178
+16804|INFO|2025-03-18 21:38:36,348|_internal.py|_log|L:97| * Detected change in 'C:\\Users\\mamin\\anaconda3\\Lib\\site-packages\\pylint\\checkers\\base\\name_checker\\__init__.py', reloading
+2708|INFO|2025-03-18 21:38:36,510|_internal.py|_log|L:97| * Restarting with watchdog (windowsapi)
+5580|INFO|2025-03-18 21:38:37,379|pm-web.py|<module>|L:4026|========= HP Server started ==========
+5580|INFO|2025-03-18 21:38:37,379|pm-web.py|<module>|L:4027|OS: nt  Platform:Windows Config:./files/pm-conf.json
+5580|WARNING|2025-03-18 21:38:37,389|_internal.py|_log|L:97| * Debugger is active!
+5580|INFO|2025-03-18 21:38:37,390|_internal.py|_log|L:97| * Debugger PIN: 142-939-178
+13632|INFO|2025-03-18 21:41:48,388|_internal.py|_log|L:97| * Detected change in 'C:\\Users\\mamin\\anaconda3\\Lib\\site-packages\\anaconda_catalogs\\__init__.py', reloading
+2708|INFO|2025-03-18 21:41:49,148|_internal.py|_log|L:97| * Restarting with watchdog (windowsapi)
+13176|INFO|2025-03-18 21:41:50,339|pm-web.py|<module>|L:4026|========= HP Server started ==========
+13176|INFO|2025-03-18 21:41:50,340|pm-web.py|<module>|L:4027|OS: nt  Platform:Windows Config:./files/pm-conf.json
+13176|WARNING|2025-03-18 21:41:50,349|_internal.py|_log|L:97| * Debugger is active!
+13176|INFO|2025-03-18 21:41:50,352|_internal.py|_log|L:97| * Debugger PIN: 142-939-178
+17832|INFO|2025-03-18 21:46:28,377|_internal.py|_log|L:97| * Detected change in 'C:\\Users\\mamin\\anaconda3\\Lib\\site-packages\\yapf\\__main__.py', reloading
+2708|INFO|2025-03-18 21:46:28,564|_internal.py|_log|L:97| * Restarting with watchdog (windowsapi)
+10652|INFO|2025-03-18 21:46:29,362|pm-web.py|<module>|L:4026|========= HP Server started ==========
+10652|INFO|2025-03-18 21:46:29,362|pm-web.py|<module>|L:4027|OS: nt  Platform:Windows Config:./files/pm-conf.json
+10652|WARNING|2025-03-18 21:46:29,371|_internal.py|_log|L:97| * Debugger is active!
+10652|INFO|2025-03-18 21:46:29,373|_internal.py|_log|L:97| * Debugger PIN: 142-939-178
+16064|INFO|2025-03-18 21:47:08,416|_internal.py|_log|L:97| * Detected change in 'C:\\Users\\mamin\\anaconda3\\Lib\\site-packages\\sqlalchemy\\testing\\suite\\__init__.py', reloading
+2708|INFO|2025-03-18 21:47:08,802|_internal.py|_log|L:97| * Restarting with watchdog (windowsapi)
+10412|INFO|2025-03-18 21:47:09,593|pm-web.py|<module>|L:4026|========= HP Server started ==========
+10412|INFO|2025-03-18 21:47:09,593|pm-web.py|<module>|L:4027|OS: nt  Platform:Windows Config:./files/pm-conf.json
+10412|WARNING|2025-03-18 21:47:09,603|_internal.py|_log|L:97| * Debugger is active!
+10412|INFO|2025-03-18 21:47:09,613|_internal.py|_log|L:97| * Debugger PIN: 142-939-178
+12616|INFO|2025-03-18 21:48:14,389|_internal.py|_log|L:97| * Detected change in 'C:\\Users\\mamin\\anaconda3\\Lib\\site-packages\\sqlalchemy\\ext\\asyncio\\exc.py', reloading
+2708|INFO|2025-03-18 21:48:15,271|_internal.py|_log|L:97| * Restarting with watchdog (windowsapi)
+5052|INFO|2025-03-18 21:48:16,067|pm-web.py|<module>|L:4026|========= HP Server started ==========
+5052|INFO|2025-03-18 21:48:16,067|pm-web.py|<module>|L:4027|OS: nt  Platform:Windows Config:./files/pm-conf.json
+5052|WARNING|2025-03-18 21:48:16,076|_internal.py|_log|L:97| * Debugger is active!
+5052|INFO|2025-03-18 21:48:16,080|_internal.py|_log|L:97| * Debugger PIN: 142-939-178
+14400|INFO|2025-03-18 21:55:12,682|_internal.py|_log|L:97| * Detected change in 'C:\\Users\\mamin\\anaconda3\\Scripts\\conda-script.py', reloading
+2708|INFO|2025-03-18 21:55:13,355|_internal.py|_log|L:97| * Restarting with watchdog (windowsapi)
+7492|INFO|2025-03-18 21:55:14,218|pm-web.py|<module>|L:4026|========= HP Server started ==========
+7492|INFO|2025-03-18 21:55:14,218|pm-web.py|<module>|L:4027|OS: nt  Platform:Windows Config:./files/pm-conf.json
+7492|WARNING|2025-03-18 21:55:14,228|_internal.py|_log|L:97| * Debugger is active!
+7492|INFO|2025-03-18 21:55:14,231|_internal.py|_log|L:97| * Debugger PIN: 142-939-178
+6336|INFO|2025-03-18 21:57:32,421|_internal.py|_log|L:97| * Detected change in 'C:\\Users\\mamin\\anaconda3\\Lib\\site-packages\\nltk\\stem\\api.py', reloading
+2708|INFO|2025-03-18 21:57:33,418|_internal.py|_log|L:97| * Restarting with watchdog (windowsapi)
+7156|INFO|2025-03-18 21:57:34,327|pm-web.py|<module>|L:4026|========= HP Server started ==========
+7156|INFO|2025-03-18 21:57:34,328|pm-web.py|<module>|L:4027|OS: nt  Platform:Windows Config:./files/pm-conf.json
+7156|WARNING|2025-03-18 21:57:34,339|_internal.py|_log|L:97| * Debugger is active!
+7156|INFO|2025-03-18 21:57:34,341|_internal.py|_log|L:97| * Debugger PIN: 142-939-178
+1064|INFO|2025-03-18 22:00:26,419|_internal.py|_log|L:97| * Detected change in 'C:\\Users\\mamin\\anaconda3\\Lib\\site-packages\\mypyc\\lower\\registry.py', reloading
+2708|INFO|2025-03-18 22:00:26,656|_internal.py|_log|L:97| * Restarting with watchdog (windowsapi)
+808|INFO|2025-03-18 22:00:27,520|pm-web.py|<module>|L:4026|========= HP Server started ==========
+808|INFO|2025-03-18 22:00:27,520|pm-web.py|<module>|L:4027|OS: nt  Platform:Windows Config:./files/pm-conf.json
+808|WARNING|2025-03-18 22:00:27,530|_internal.py|_log|L:97| * Debugger is active!
+808|INFO|2025-03-18 22:00:27,531|_internal.py|_log|L:97| * Debugger PIN: 142-939-178
+7596|INFO|2025-03-18 22:04:24,485|_internal.py|_log|L:97| * Detected change in 'C:\\Users\\mamin\\anaconda3\\Lib\\site-packages\\mypy\\test\\testfinegrainedcache.py', reloading
+2708|INFO|2025-03-18 22:04:25,405|_internal.py|_log|L:97| * Restarting with watchdog (windowsapi)
+18272|INFO|2025-03-18 22:04:26,338|pm-web.py|<module>|L:4026|========= HP Server started ==========
+18272|INFO|2025-03-18 22:04:26,338|pm-web.py|<module>|L:4027|OS: nt  Platform:Windows Config:./files/pm-conf.json
+18272|WARNING|2025-03-18 22:04:26,349|_internal.py|_log|L:97| * Debugger is active!
+18272|INFO|2025-03-18 22:04:26,352|_internal.py|_log|L:97| * Debugger PIN: 142-939-178

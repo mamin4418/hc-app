@@ -1,0 +1,145 @@
+<html>
+
+<body>
+<title>Himalaya Properties</title>
+<style>
+body {
+  //background-color: lightblue;
+}
+hr.title {
+  border-top: 2px solid black;
+}
+hr.solidB {
+  border-top: 1px solid black;
+}
+hr.solidG {
+  border-top: 1px solid #dfdfdf;
+}
+hr.dashedB {
+  border-top: 1px dashed black;
+}
+hr.dottedG {
+  border-top: 1px dotted gray;
+}
+h1 {
+  color: navy;
+  margin-left: 20px;
+  font-family: "Arial", Times, serif;
+}
+h2 {
+  color: solid gray;
+  text-align: center;
+  font-family: "Arial", Times, serif;
+  font-size:20px;
+}
+h3 {
+  color: red;
+  text-align: center;
+  font-family: "Arial", Times, serif;
+  font-size:26px;
+}
+h4 {
+  color: red;
+  text-align: left;
+  font-family: "Arial", Times, serif;
+  font-size:20px;
+}
+.text-code {
+  width: 100%;
+  color: gray;
+  font-style: normal;
+  font-family: "Arial", Times, serif;
+  font-size:8px;
+}
+label {
+  width: 100%;
+  color: black;
+  font-style: strong;
+  font-family: "Arial", Times, serif;
+  font-size:12px;
+}
+text {
+  width: 100%;
+  color: black;
+  font-style: normal;
+  font-family: "Arial", Times, serif;
+  font-size:16px;
+}
+.text-description {
+  font-style: normal;
+  font-family: "Ariel", Times, serif;
+  font-size:16px;
+}
+.text-disclaimer {
+  font-style: normal;
+  font-family: "Verdana", Times, serif;
+  font-size:10px;
+}
+</style>
+<a href="https://www.himalayaproperties.org">
+<img src="{{data['h_logo']}}" height="50" width="50" /></a><div style="text-align:center;vertical-align:middle;font-size:36px;font-family:'Arial', Times, serif;">{{data['company_name']}}</div>
+<hr class="solidG">
+<br>
+<h3>
+Welcome to the Himalaya Community at Bowling Green, KY
+</h3>
+<br>
+<br>
+<text>
+<div style="align-content: left;font-weight: bold;">
+Dear {{data['first_name']}} {{data['last_name']}},
+</div>
+</text>
+<div>&nbsp;</div>
+<br>
+<text>
+We hope that this letter finds you in best of your health. 
+<br><br>
+As you read this letter, ownership has been changed for your apartment.
+<br>
+<br>
+Our office is located at 173 Traditions Blvd [<a href="https://www.google.com/maps/place/173+Traditions+Blvd,+Bowling+Green,+KY+42103">Google Map</a>] and our team is available to help you as necessary. You should have received an envelope with following information.<br>
+1.  Contact Information<br>
+2.  Maintenance / Support information<br>
+3.  Payment Information<br>
+4.  Online account Access [ Records are being updated and may take few days to get all the details updated. ]
+<br><br>
+Please make sure to send future payments as per the attached document from now on. If you have any questions, please contact us at payments@himalayaproperties.org
+<br><br>
+We thank you for working with us during the blackout issues with certain common area lights on the Nov 10th during the transition from SKY property management. And we welcome you to the management.
+ <br>
+ <br>
+
+Thank you.
+</text><br>
+
+<br>
+<br>
+<hr>
+<STRONG>COMMUNICATION AND HELP</STRONG>
+<br>
+<br>Please use our website to report all issues: <a href="https://himalayaproperties.org">https://www.himalayaproperties.org</a>
+<br>Contact email: <a href="mailto:support@himalayaproperties.org">support@himalayaproperties.org</a>
+<br><br>
+<STRONG>Our Main Office Number: 646-780-5001 (you can text or call)</STRONG><br>
+Email/Text are best method to communicate as it will help us track your request and provide regular updates independently.
+<br>
+</div>
+<br>
+<div class="text-description" style="font-style: bold;">
+It is very important that we have your full and correct contact information all the time. If your contact information have changed, please send your updated contact information to : <a href="mailto:support@himalayaproperties.org">support@himalayaproperties.org</a>
+</div>
+<br><br>
+<h2>{{data['company_legal_name']}}</h2>
+<label><a href="https://www.himalayaproperties.org">https://www.himalayaproperties.org</a></label>
+<hr class="solidB">
+<br>
+<label>Disclaimer</label>
+<div class="text-disclaimer">
+The contents of this email and any attachments to it contain confidential and/or legally privileged information from {{data['company_legal_name']}}. This information is only for the use of the intended recipient. If you are not the intended recipient, you are hereby notified that any disclosure, copying, distribution, or the taking of any action in reliance on the contents of the contained information is strictly prohibited and that the documents should be returned to {{data['company_legal_name']}} immediately. In this regard, if you have received this email in error, please notify us immediately. 
+</div>
+
+<div class="text-code">Reference: {{data['reference']}}</div>
+</body>
+</html>
+

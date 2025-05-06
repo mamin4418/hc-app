@@ -1,0 +1,112 @@
+<html>
+
+<body>
+<title>Himalaya Tenant Statement</title>
+<style>
+body {
+  //background-color: lightblue;
+}
+hr.title {
+  border-top: 2px solid black;
+}
+hr.solidB {
+  border-top: 1px solid black;
+}
+hr.solidG {
+  border-top: 1px solid #dfdfdf;
+}
+h1 {
+  color: navy;
+  margin-left: 20px;
+  font-family: "Arial", Times, serif;
+}
+h2 {
+  color: solid gray;
+  text-align: center;
+  font-family: "Arial", Times, serif;
+  font-size:45px;
+}
+h3 {
+  color: gray;
+  text-align: center;
+  font-family: "Arial", Times, serif;
+  font-size:26px;
+}
+.text-code {
+  width: 100%;
+  color: gray;
+  font-style: normal;
+  font-family: "Arial", Times, serif;
+  font-size:8px;
+}
+label {
+  width: 100%;
+  color: black;
+  font-style: normal;
+  font-family: "Arial", Times, serif;
+  font-size:12px;
+}
+text {
+  width: 100%;
+  color: black;
+  font-style: normal;
+  font-family: "Arial", Times, serif;
+  font-size:16px;
+}
+
+.table-header {
+  font-style: normal;
+  font-family: "Ariel", Times, serif;
+  font-size:22px;
+  border-bottom: 1px solid #dfdfdf;
+  padding-bottom: 10px;
+}
+.text-description {
+  font-style: normal;
+  font-family: "Ariel", Times, serif;
+  font-size:16px;
+}
+.text-info {
+  font-style: normal;
+  font-family: "Verdana", Times, serif;
+  font-size:10px;
+}
+</style>
+
+<img src="{{data['h_logo']}}" height="50" width="50" />
+<div style="text-align:center;vertical-align:middle;font-size:36px;">Work Orders</div>
+<div>
+  <table style="width:100%;"><tr><td style="width:100px;">Manager :</td><td>Scott LeCain</td><td style="text-align:right;">{{data['statement_date']}}</td></tr></table>
+</div>
+<hr class="title">
+<div style="align-content: center;">
+  <table class="table">
+    <tr>
+      <th>WO</th>
+      <th>Date</th>
+      <th>Priority</th>
+      <th>Address</th>
+      <th>Tenant</th>
+      <th>Contact</th>
+      <th>Description</th>
+    </tr>
+    {% for csl in data["transactions"] %}
+    <tr class="text-info">
+      <td style="width:25px;text-align:center;">{{ csl["wo_id"] }}</td>
+      <td style="width:75px;text-align:center;">{{ csl["tdate"] }}</td>
+      <td style="width:60px;">{{ csl['priority_l'] }}</td>
+      <td style="width:120px;text-align:right;">{{ csl['address'] }}</td>
+      <td style="width:110px;text-align:right;">{{ csl['contact_name'] }}</td>
+      <td style="width:110px;text-align:right;">{{ csl['contact_info'] }}</td>
+      <td>{{ csl['description'] }}</td>
+    </tr>
+    {% endfor %}
+  </table> 
+</div>
+<br>
+
+<hr>
+<div class="text-code">Reference: {{data['account']}}  {{data['company']}} {{data['company_address']}} {{data['company_address2']}} email: payments@himalayaproperties.org</div>
+</body>
+</html>
+

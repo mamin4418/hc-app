@@ -1,0 +1,104 @@
+<html>
+<body>
+<title>Himalaya Properties</title>
+<style>
+body {
+  //background-color: lightblue;
+}
+hr.title {
+  border-top: 2px solid black;
+}
+hr.solidB {
+  border-top: 1px solid black;
+}
+hr.solidG {
+  border-top: 1px solid #dfdfdf;
+}
+hr.dashedB {
+  border-top: 1px dashed black;
+}
+hr.dottedG {
+  border-top: 1px dotted gray;
+}
+
+label {
+  width: 100%;
+  color: black;
+  font-style: normal;
+  font-family: "Arial", Times, serif;
+  font-size:12px;
+}
+text {
+  width: 100%;
+  color: black;
+  font-style: normal;
+  font-family: "Arial", Times, serif;
+  font-size:16px;
+}
+.text-label {
+  color: black;
+  font-style: normal;
+  font-family: "Arial", Times, serif;
+  font-size:18px;
+}
+.text-general {
+  color: black;
+  text-align: right;
+  font-style: normal;
+  font-family: "Arial", Times, serif;
+  font-size:16px;
+}
+
+.text-description {
+  font-style: normal;
+  font-family: "Ariel", Times, serif;
+  font-size:16px;
+}
+.text-disclaimer {
+  font-style: normal;
+  font-family: "Verdana", Times, serif;
+  font-size:10px;
+}
+.text-code {
+  width: 100%;
+  color: gray;
+  font-style: normal;
+  font-family: "Arial", Times, serif;
+  font-size:8px;
+}
+</style>
+<div style="text-align:center;vertical-align:middle;font-size:48px;background-color:  black; color: orange;">HVAC Filter Change</div>
+<hr class="title">
+<div>&nbsp;</div>
+<div class="text-label">Dear {{data['first_name']}} {{data['last_name']}}</div>
+<div><text>{{data['label']}}</text> </div>
+<div><text>{{data['city']}}&nbsp;&nbsp;{{data['state']}}&nbsp;{{data['zip']}}</text></div>
+<br>
+<br>
+<div>
+We will visit your unit for HVAC filter change during Oct 18-21. 
+</div>
+<br>
+<div>
+If you’re home, we will replace the filter. 
+</div>
+<br>
+<div>
+If you’re not home, we will leave the filer at your door. If you find the filter outside of your door, please change it right away. If you need help, please reach out to us and we will plan the visit to replace it for you.
+</div>
+<br>
+
+<div class="text-label">
+  Management
+</div>
+<img src="{{data['h_logo']}}" height="50" width="50" />
+<hr class="solidB">
+<br>
+<label>Disclaimer</label>
+<div class="text-disclaimer">
+The contents of this email and any attachments to it contain confidential and/or legally privileged information from {{data['company_legal_name']}}. This information is only for the use of the intended recipient. If you are not the intended recipient, you are hereby notified that any disclosure, copying, distribution, or the taking of any action in reliance on the contents of the contained information is strictly prohibited and that the documents should be returned to {{data['company_legal_name']}} immediately. In this regard, if you have received this email in error, please notify us immediately. 
+</div>
+<div class="text-code">Reference: {{data['account']}}  {{data['company']}} {{data['company_address']}} {{data['company_address2']}} email: payments@himalayaproperties.org</div>
+</body>
+</html>
+

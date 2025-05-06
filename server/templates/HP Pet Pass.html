@@ -1,0 +1,112 @@
+<html>
+
+<body>
+<title>Himalaya Pet Pass</title>
+<style>
+body {
+  //background-color: lightblue;
+}
+h1 {
+  color: navy;
+  margin-left: 20px;
+}
+h2 {
+  color: solid gray;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size:38px;
+}
+h3 {
+  color: black;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size:30px;
+}
+label {
+  width: 100%;
+  color: blue;
+  align-content: center;
+  vertical-align: center;
+  font-style: normal;
+  font-family: "Times New Roman", Times, serif;
+  font-size:24px;
+}
+.label2 {
+  color: red;
+  text-align: center;
+  font-style: normal;
+  font-family: "Times New Roman", Times, serif;
+  font-size:30px;
+}
+.label3 {
+  width: 100px;
+  height: 40px;
+  border: 0.1px solid #dfdfdf;
+  text-align:center;
+  font-style: normal;
+  font-family: "Times New Roman", Times, serif;
+  font-size:24px;
+}
+.label4 {
+  width: 100px;
+  height: 30px;
+  text-align:center;
+  font-style: normal;
+  font-family: "Times New Roman", Times, serif;
+  font-size:24px;
+}
+.label5 {
+  width: 100px;
+  height: 15px;
+  text-align:center;
+  font-style: normal;
+  font-family: "Times New Roman", Times, serif;
+  font-size:12px;
+}
+</style>
+
+<img src="{{data['h_logo']}}" height="50" width="50" /><div style="text-align:center;vertical-align:middle;font-size:46px;">Himalaya Pet Pass</div>
+<hr>
+    <table class="table">
+      <tr><td>Tenant ID</td><td>:&nbsp;{{ data["tenant_id"]}}</td></tr>
+      <tr><td>Permit ID</td><td>:&nbsp;{{ data["pet_id"]}}</td></tr>
+      <tr><td>Name</td><td>:&nbsp;{{ data["first_name"]}}&nbsp;{{ data["last_name"]}}</td></tr>
+      <tr><td>Address</td><td>:&nbsp;{{ data["label"]}}</td></tr>
+      <tr><td>Pet Role</td><td>:&nbsp;{{ data["pet_role"]}}</td></tr>
+      <tr><td>Pet Type</td><td>:&nbsp;{{data["pet_type"]}}</td></tr>
+      <tr><td>Pet Breed</td><td>:&nbsp;{{data["breed"]}}</td></tr>
+      <tr><td>Vaccination</td><td>:&nbsp;{{data["vaccination"]}}</td></tr>
+      <tr><td>Pet Insurance</td><td>:&nbsp;{{data["insurance"]}}</td></tr>
+      <tr><td>Pet Pass (One time)</td><td>:&nbsp;{{data["setup_charge"]}}</td></tr>
+      <tr><td>Monthly Fees</td><td>:&nbsp;{{data["monthly"]}}</td></tr>
+      <tr><td>Expiry</td><td>:&nbsp;{{ data["expiry"]}}</td></tr>
+      <tr><td>Notes</td><td>:&nbsp;{{data["notes"]}}</td></tr>
+    </table>
+<br>
+<div class="text-description>">I confirm that this is for personal use only. It is tenant's responsibility to pay any monthly dues and renew tag every month with rent payments. If tenant is found to have pet with unpaid pet fees, tenant would be breaching the lease terms. Tenant will :</div>
+<div class="text-description>">&nbsp;1.  Maintain pet in good health and always maintain registration, vaccination as per local government requirements.</div>
+<div class="text-description>">&nbsp;2.  Keep pet under control at all times.</div>
+<div class="text-description>">&nbsp;3.  Keep the pet restrained, but not tethered, when it is outside Resident's dwelling.</div>
+<div class="text-description>">&nbsp;4.  Will not leave the pet unattended for any periods.</div>
+<div class="text-description>">&nbsp;5.  Dispose of the pet's droppings properly and quickly.</div>
+<div class="text-description>">&nbsp;6.  Will not leave food or water for the pet, or any other animal, outside the dwelling.</div>
+<div class="text-description>">&nbsp;7.  Will have pet's offspring removed within eight weeks of birth</div>
+<div class="text-description>">&nbsp;8.  Pay immediately for any damage, loss, or expense caused by the pet.</div>
+<div class="text-description>">&nbsp;9.  Maintain pet insurance at all times.</div>
+<div class="text-description>">&nbsp;10. Will keep pet restrained when any one from management team arrives for any repairs or inspection or management related work on my residence.</div>
+<div class="text-description>">&nbsp;11. Keep pet from causing any annoyance or discomfort to others and will remedy immediately any complaints made through the Management</div>
+<div class="text-description>">Tenant understands that landlord has no responsibility for tenant's pet and the actions of tenant's pet.</div>
+<div class="text-description>">Tenant will follow all pet regulations from landlord/management.</div>
+<div class="text-description>">Management reserves the right to revoke permission to keep the pet should Resident violate this agreement</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div>&nbsp;&nbsp;Tenant Signature&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date</div>
+<br>
+<hr>
+<br>
+</body>
+</html>

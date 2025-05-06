@@ -1,0 +1,322 @@
+<html>
+
+<body>
+<title>Himalaya Parking Tag</title>
+<style>
+body {
+  //background-color: lightblue;
+}
+h1 {
+  color: navy;
+  margin-left: 20px;
+}
+h2 {
+  color: solid gray;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size:38px;
+}
+h3 {
+  color: black;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size:30px;
+}
+label {
+  width: 100%;
+  color: blue;
+  align-content: center;
+  vertical-align: center;
+  font-style: normal;
+  font-family: "Times New Roman", Times, serif;
+  font-size:12px;
+}
+.label2 {
+  color: red;
+  text-align: center;
+  font-style: normal;
+  font-family: "Times New Roman", Times, serif;
+  font-size:16px;
+}
+div.text1 {
+  width: 100%;
+  color: black;
+  align-content: left;
+  vertical-align: center;
+  font-style: normal;
+  font-family: "Times New Roman", Times, serif;
+  font-size:12px;
+}
+
+</style>
+
+<img src="{{data['h_logo']}}" height="50" width="50" /><div style="text-align:center;vertical-align:middle;font-size:46px;">Himalaya Rental Application</div>
+<hr>
+
+
+    <div class="card-body mb-form mb-2">
+      <div class="row col-sm-12 label2 mt-4">Personal Information
+      </div>
+      <div class="row col-sm-12">
+        <div class="col-sm-5 text1"><label>Name</label>123456 {{data['tenant']['first_name']}}&nbsp;{{data['tenant']['middle_name']}}&nbsp;{{data['tenant']['last_name']}}</div>
+        <div class="col-sm-2"><label>Birth Date</label>{{data['tenant']['dob']}}</div>
+        <div class="col-sm-2"><label>Tax ID</label>{{data['tenant']['tax_id']}}</div>
+        <div class="col-sm-3"><label>Driver License</label>{{data['tenant']['dl_state']}}-{{data['tenant']['dl_id']}}</div>
+      </div>
+      <div class="row col-sm-12">
+        <div class="col-sm-4"><label>Address</label>{{data['tenant']['street']}}&nbsp;{{data['tenant']['city']}}&nbsp;{{data['tenant']['state']}}&nbsp;{{data['tenant']['zip']}}</div>
+        <div class="col-sm-3"><label>Email</label>{{data['tenant']['email']}}</div>
+        <div class="col-sm-3"><label>Phone</label>{{data['tenant']['phone']}}</div>
+        <div class="col-sm-2"><label>Rent</label>{{data['tenant']['rent']}}</div>
+      </div>
+      <div class="row col-sm-12">
+        <div class="col-sm-4"><label>Reason</label>{{data['tenant']['reason1']}}</div>
+        <div class="col-sm-2"><label>Duration</label>{{data['tenant']['duration1']}}</div>
+        <div class="col-sm-3"><label>Landlord</label>{{data['tenant']['landlord1']}}&nbsp;{{data['tenant']['phone1']}}</div>
+        <div class="col-sm-3"><label>Rent</label>{{data['tenant']['landlord_payment1']}}&nbsp;{{data['tenant']['landlord_current1']}}</div>
+      </div>
+      
+      <div class="row col-sm-12 label2 mt-4">Additional Occupants
+      </div>
+      {% for item in data["occupants"] %}
+      <div class="row col-sm-12">
+        <div class="col-sm-1">
+          <label>Name</label>
+        </div>
+        <div class="col-sm-3">
+          {{item["first_name"]}}&nbsp;{{item["last_name"]}}
+        </div>
+        <div class="col-sm-2">
+          <label>Relationship</label>
+          </div>
+        <div class="col-sm-1">{{item["relationship"]}}</div>
+        <div class="col-sm-2"><label>Occupation</label></div>
+        <div class="col-sm-1">{{item["role"]}}</div>
+        <div class="col-sm-1"><label>Birth Date</label></div>
+        <div class="col-sm-1">{{item["birth_date.value"]}}</div>
+      </div>
+      {% endfor %}
+      <div class="row col-sm-12 label2 mt-4">Vehicle Information
+      </div>
+      {% for item in data["vehicles"] %}
+      <div class="row col-sm-12">
+        <div class="col-sm-1"><label>Make</label>
+          </div>
+        <div class="col-sm-1">{{item["make"]}}
+        </div>
+        <div class="col-sm-1"><label>Model</label></div>
+        <div class="col-sm-1">{{item["model"]}}</div>
+        <div class="col-sm-1"><label>Year</label></div>
+        <div class="col-sm-1">{{item["year"]}}</div>
+        <div class="col-sm-1"><label>Color</label></div>
+        <div class="col-sm-1">{{item["color"]}}</div>
+        <div class="col-sm-1"><label>State </label></div>
+        <div class="col-sm-1">{{item["state"]}}</div>
+        <div class="col-sm-1"><label>Plate</label></div>
+        <div class="col-sm-1">{{item["plate"]}}</div>
+      </div>
+      {% endfor %}
+      <div class="row col-sm-12 label2 mt-4">I am applying for this Home
+      </div>
+      <div class="row col-sm-12">
+        <div class="col-sm-2"><label>Rent</label>{{data['property']['market_rent']}}</div>
+        <div class="col-sm-2"><label>Bedrooms</label>{{data['property']['bed']}}</div>
+        <div class="col-sm-2"><label>Bathrooms</label>{{data['property']['bath']}}</div>
+        <div class="col-sm-2"><label>Total Rooms</label>{{data['property']['total_rooms']}}</div>
+        <div class="col-sm-2"><label>Size (Sq Ft)</label>{{data['property']['size']}}</div>
+        <div class="col-sm-2"><label>Size</label>{{data['property']['description']}}</div>
+      </div>
+      
+      <div class="row col-sm-12 label2 mt-4">I like to have this features
+      </div>
+      <div class="row col-sm-12">
+        <div class="col-sm-2"><label>Pay Rent</label>{{data['propertyW']['market_rent']}}</div>
+        <div class="col-sm-2"><label>Bedrooms</label>{{data['propertyW']['bed']}}</div>
+        <div class="col-sm-2"><label>Bathrooms</label>{{data['propertyW']['bath']}}</div>
+        <div class="col-sm-2"><label>Total Rooms</label>{{data['propertyW']['total_rooms']}}</div>
+        <div class="col-sm-2"><label>Size (Sq Ft)</label>{{data['propertyW']['size']}}</div>
+        <div class="col-sm-2"><label>Size</label>{{data['propertyW']['description']}}</div>
+      </div>
+      
+      <div class="row col-sm-12 label2 mt-4">Financial Information
+      </div>
+      {% for item in data["financials"] %}
+      <div class="row col-sm-12" >
+        <div class="col-sm-3">
+          <label>Bank / Agency</label>
+        
+          {{item["company"]}}
+        </div>
+        <div class="col-sm-2">
+          <label>Type</label>
+          {{item["type"]}}
+        </div>
+        <div class="col-sm-3">
+          <label>Account Number</label>
+          {{item["account"]}}
+        </div>
+        <div class="col-sm-2">
+          <label>Balance</label>
+          {{item["balance"]}}
+        </div>
+        <div class="col-sm-2">
+          <label>Monthly Payment</label>
+          {{item["monthly"]}}
+        </div>
+      </div>
+      {% endfor %}
+
+      <div class="row col-sm-12 label2 mt-4">Current Employer
+      </div>
+      <div class="row col-sm-12">
+        <div class="col-sm-1"><label>Name</label></div>
+        <div class="col-sm-2">{{data['tenant']['employer1']}}</div>
+        <div class="col-sm-1"><label>Role</label></div>
+        <div class="col-sm-2">{{data['tenant']['role1']}}</div>
+        <div class="col-sm-1"><label>Manager</label></div>
+        <div class="col-sm-1">{{data['tenant']['manager1']}}</div>
+        <div class="col-sm-1"><label>Phone</label></div>
+        <div class="col-sm-1">{{data['tenant']['ephone1']}}</div>
+        <div class="col-sm-1"><label>Salary (Week)</label></div>
+        <div class="col-sm-1">{{data['tenant']['salary1']}}</div>
+      </div>
+      <div class="row col-sm-12">
+        <div class="col-sm-2"><label>Address</label></div>
+        <div class="col-sm-6">{{data['tenant']['estreet1']}}&nbsp;{{data['tenant']['ecity1']}}&nbsp;{{data['tenant']['estate1']}}&nbsp;{{data['tenant']['ezip1']}}</div>
+        <div class="col-sm-2"><label>Years Employed</label></div>
+        <div class="col-sm-2">{{data['tenant']['period1']}}</div>
+      </div>
+      <div class="row col-sm-12 label2 mt-4">Previous Employer
+      </div>
+      <div class="row col-sm-12">
+        <div class="col-sm-1"><label>Name</label></div>
+        <div class="col-sm-2">{{data['tenant']['employer2']}}</div>
+        <div class="col-sm-1"><label>Role</label></div>
+        <div class="col-sm-2">{{data['tenant']['role2']}}</div>
+        <div class="col-sm-1"><label>Manager</label></div>
+        <div class="col-sm-1">{{data['tenant']['manager2']}}</div>
+        <div class="col-sm-1"><label>Phone</label></div>
+        <div class="col-sm-1">{{data['tenant']['ephone2']}}</div>
+        <div class="col-sm-1"><label>Salary (Week)</label></div>
+        <div class="col-sm-1">{{data['tenant']['salary2']}}</div>
+      </div>
+      <div class="row col-sm-12">
+        <div class="col-sm-2"><label>Address</label></div>
+        <div class="col-sm-6">{{data['tenant']['estreet2']}}&nbsp;{{data['tenant']['ecity2']}}&nbsp;{{data['tenant']['estate2']}}&nbsp;{{data['tenant']['ezip2']}}</div>
+        <div class="col-sm-2"><label>Years Employed</label></div>
+        <div class="col-sm-2">{{data['tenant']['period2']}}</div>
+      </div>
+
+
+      <div class="row col-sm-12 label2 mt-4">Other Income
+      </div>
+      {% for item in other_income %}
+      <div class="row col-sm-12">
+        <div class="col-sm-1"><label>Income</label></div>
+        <div class="col-sm-2">{{item["income"]}}</div>
+        <div class="col-sm-1"><label>Period</label></div>
+        <div class="col-sm-2">{{item["period"]}}</div>
+        <div class="col-sm-1"><label>Source</label></div>
+        <div class="col-sm-2">{{item["source"]}}</div>
+        <div class="col-sm-2"><label>Income Proof</label></div>
+        <div class="col-sm-1">{{item["proof"]}}</div>
+      </div>
+      {% endfor %}
+      <div class="row col-sm-12 label2 mt-4">References
+      </div>
+      {% for item in data["reference"] %}
+      <div class="row col-sm-12">
+        <div class="col-sm-1">
+          <label>Name</label>
+        </div>
+        <div class="col-sm-2">
+          {{item["name"]}}
+        </div>
+        <div class="col-sm-2">
+          <label>Relationship</label>
+          </div>
+        <div class="col-sm-2">
+          {{item["relationship"]}}
+        </div>
+        <div class="col-sm-1">
+          <label>Email</label>
+        </div>
+        <div class="col-sm-2">
+          {{item["email"]}}
+        </div>
+        <div class="col-sm-1">
+          <label>Years Known</label>
+          </div>
+        <div class="col-sm-1">
+          {{item["period"]}}
+        </div>
+      </div>
+      {% endfor %}
+      <div class="row col-sm-12 label2 mt-4">Applicant Questionarie
+      </div>
+      {% for item in data["questions"] %}
+      <div class="row col-sm-12" >
+        <div class="col-sm-5">
+          <label>{{item["index"]}}.&nbsp;{{item["question"]}}</label>
+        </div>
+        <div class="col-sm-1">
+          {{item["answer"]}}
+        </div>
+        <div class="col-sm-6">
+          {{item["reason"]}}
+        </div>
+      </div>
+      {% endfor %}
+      <div class="row col-sm-12">
+        <div class="col-sm-1" style="align-content:right;">
+          &nbsp;
+        </div>
+        <div class="col-sm-11 label2"  style="text-align:left;">
+          <input name="createdFor" type="checkbox" [(ngModel)]="confirm1"/> <span style="color:red;">*</span>&nbsp;
+          I understand that until I pay $30 application fee, without that application is not complete.
+        </div>
+      </div>
+      <div class="row col-sm-12">
+        <div class="col-sm-1"  style="align-content:right;">
+          &nbsp;
+        </div>
+        <div class="col-sm-11 label2"  style="text-align:left;">
+          <input name="createdFor" type="checkbox" [(ngModel)]="confirm2"/> <span style="color:red;">*</span>&nbsp;
+          I will email copy of ID to rent@himalayaproperties.org 
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="row col-sm-12">
+        <div class="col-sm-2 label2">
+          Signature <span style="color:red;">*</span>
+        </div>
+        <div class="col-sm-2">
+          wwwwwwwwwwwwwww
+        </div>
+        <div class="col-sm-8 label2">
+          This is your electronic signature as of {{current_time}}
+        </div>
+      </div>
+    </div>
+  
+    <div class=" card-footer">
+      <div class="row col-sml-12">
+        <div class="col-sm-3">
+        sssssssssssss
+        </div>
+        <div class="col-sm-3">
+        &nbsp;
+        </div>
+        <div class="col-sm-3">
+          xxxxxxxxxxxxxx
+        </div>
+        <div class="col-sm-3">
+        &nbsp;
+        </div>
+      </div>
+    </div>
+  
+
+</body>
+</html>

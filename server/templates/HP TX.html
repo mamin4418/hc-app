@@ -1,0 +1,96 @@
+<html>
+
+<body>
+<title>HP Transaction Receipt</title>
+<style>
+body {
+  //background-color: lightblue;
+}
+h1 {
+  color: navy;
+  margin-left: 20px;
+}
+h2 {
+  color: solid gray;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size:38px;
+}
+h3 {
+  color: black;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size:30px;
+}
+.text-code {
+  width: 100%;
+  color: gray;
+  font-style: normal;
+  font-family: "Arial", Times, serif;
+  font-size:8px;
+}
+label {
+  width: 100%;
+  color: black;
+  font-style: strong;
+  font-family: "Arial", Times, serif;
+  font-size:12px;
+}
+text {
+  width: 100%;
+  color: black;
+  font-style: normal;
+  font-family: "Arial", Times, serif;
+  font-size:16px;
+}
+.text-description {
+  font-style: normal;
+  font-family: "Ariel", Times, serif;
+  font-size:16px;
+}
+.text-disclaimer {
+  font-style: normal;
+  font-family: "Verdana", Times, serif;
+  font-size:10px;
+}
+</style>
+
+<img src="{{data['h_logo']}}" height="50" width="50" /><div style="text-align:center;vertical-align:middle;font-size:46px;">Himalaya Transaction Receipt</div>
+<hr>
+    <table class="table">
+      <tr><td><label>Transaction ID</label></td><td><text>:&nbsp;{{ data["tx_id"]}}</text></td></tr>
+      <tr><td><label>Tenant ID</label></td><td><text>:&nbsp;{{ data["tenant_id"]}}</text></td></tr>
+      <tr><td><label>Tenant Name</label></td><td><text>:&nbsp;{{ data["first_name"]}}&nbsp;{{ data["last_name"]}}</text></td></tr>
+      <tr><td><label>Address</label></td><td><text>:&nbsp;{{ data["label"]}}&nbsp;&nbsp;{{ data["city"]}}&nbsp;{{ data["state"]}}&nbsp;{{ data["zip"]}}</text></td></tr>
+      <tr><td><label>Payee</label></td><td><text>:&nbsp;{{ data["payee"]}}</text></td></tr>
+      <tr><td><label>Category</label></td><td><text>:&nbsp;{{ data["category"]}}</text></td></tr>
+      <tr><td><label>Date</label></td><td><text>:&nbsp;{{ data["tdate"]}}</text></td></tr>
+      <tr><td><label>Payment</label></td><td><text>:&nbsp;{{data["credit"]}}</text></td></tr>
+      <tr><td><label>Charges</label></td><td><text>:&nbsp;{{data["debit"]}}</text></td></tr>
+      <tr><td><label>Balance</label></td><td><text>:&nbsp;{{data["amount"]}}</text></td></tr>
+      <tr><td><label>Payment Type</label></td><td><text>:&nbsp;{{data["type"]}}</text></td></tr>
+      <tr><td><label>Reference</label></td><td><text>:&nbsp;{{data["reference"]}}</text></td></tr>
+      <tr><td><label>Note</label></td><td><text>:&nbsp;{{ data["description"]}}</text></td></tr>
+      <tr><td><label>Tags</label></td><td><text>:&nbsp;{{ data["tags"]}}</text></td></tr>
+      <tr><td><label>Status</label></td><td><text>:&nbsp;{{data['status_label']}}[{{ data["status"]}}]</text></td></tr>
+      <tr><td><label>Updated</label></td><td><text>:&nbsp;{{ data["updatedby"]}}&nbsp;{{ data["updated"]}}</text></td></tr>
+    </table>
+<br>
+<div class="text-description>">This is a receipt of the transaction as indicated above.</div>
+<div class="text-description>"></div>
+<div class="text-description>"></div>
+<br>
+<br>
+<br>
+<div>Signature</div><div>Date :</div>
+<br>
+<hr class="solidB">
+<br>
+<label>Disclaimer</label>
+<div class="text-disclaimer">
+The contents of this document and any attachments to it contain confidential and/or legally privileged information. This information is only for the use of the intended recipient. If you are not the intended recipient, you are hereby notified that any disclosure, copying, distribution, or the taking of any action in reliance on the contents of the contained information is strictly prohibited and that the documents should be returned immediately. In this regard, if you have received this email in error, please notify us immediately. 
+</div>
+
+<div class="text-code">Reference: {{data['account']}} Created as of : {{data['statement_date']}}</div>
+</body>
+</html>

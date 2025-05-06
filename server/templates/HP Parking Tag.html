@@ -1,0 +1,138 @@
+<html>
+
+<body>
+<title>Himalaya Parking Tag</title>
+<style>
+body {
+  //background-color: lightblue;
+}
+h1 {
+  color: navy;
+  margin-left: 20px;
+}
+h2 {
+  color: solid gray;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size:38px;
+}
+h3 {
+  color: black;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size:30px;
+}
+label {
+  width: 100%;
+  color: blue;
+  align-content: center;
+  vertical-align: center;
+  font-style: normal;
+  font-family: "Times New Roman", Times, serif;
+  font-size:24px;
+}
+.label2 {
+  color: red;
+  text-align: center;
+  font-style: normal;
+  font-family: "Times New Roman", Times, serif;
+  font-size:30px;
+}
+.label3 {
+  width: 100px;
+  height: 40px;
+  border: 0.1px solid #dfdfdf;
+  text-align:center;
+  font-style: normal;
+  font-family: "Times New Roman", Times, serif;
+  font-size:24px;
+}
+.label4 {
+  width: 100px;
+  height: 30px;
+  text-align:center;
+  font-style: normal;
+  font-family: "Times New Roman", Times, serif;
+  font-size:24px;
+}
+.label5 {
+  width: 100px;
+  height: 15px;
+  text-align:center;
+  font-style: normal;
+  font-family: "Times New Roman", Times, serif;
+  font-size:12px;
+}
+</style>
+
+<img src="{{data['h_logo']}}" height="50" width="50" /><div style="text-align:center;vertical-align:middle;font-size:46px;">Himalaya Parking Permit</div>
+<hr>
+    <table class="table">
+      <tr>
+        <td>Permit ID</td><td>:&nbsp;{{ data["parking_tag_id"]}}</td>
+
+      </tr>
+      <tr>
+        <td>Tenant ID</td><td>:&nbsp;{{ data["tenant_id"]}}</td>
+        </tr><tr>
+        <td>Name</td><td>:&nbsp;{{ data["first_name"]}}&nbsp;{{ data["last_name"]}}</td>
+        </tr><tr>
+        <td>Address</td><td>:&nbsp;{{ data["label"]}}</td>
+        
+        
+        </tr><tr>
+        <td>Parking Lot</td><td>:&nbsp;{{ data["parking_lot"]}}</td>
+        </tr><tr>
+        <td>Expiry</td><td>:&nbsp;{{ data["expiry"]}}</td>
+      </tr>
+      <tr><td>Vehicle License Plate</td><td>:&nbsp;{{data["state"]}} {{data["tag"]}}</td></tr>
+      <tr><td>Tag Cost (One time)</td><td>:&nbsp;{{data["setup_charge"]}}</td></tr>
+      <tr><td>Monthly Fees</td><td>:&nbsp;{{data["monthly"]}}</td></tr>
+    </table>
+<br>
+<div class="text-description>">I confirm that this is for my personal use only. I will keep this tag in safe place and return to the landlord when I vacate the property. It is my responsibility to renew tag with every lease. If I park my vehicle without tag in the deginated space, it may be towed and I will be responsible for all charges towards that.</div>
+<div class="text-description>">I understand that landlord has no responsibility for my vehicle and the content inside the vehicle.</div>
+<div class="text-description>">I will maintain my vehicle in good condition and always maintain registration & insurance as per state requirements.</div>
+<br>
+<br>
+<br>
+<div>Tenant Signature</div><div>Date :</div>
+<br>
+<hr>
+<br>
+
+<table>
+  <tr><td style="align-content: center;">
+    <table style="border: 1px solid gray; align-content: center; width:300px;height:355px;">
+      <tr>
+        <td style="width:145px;margin-left:20px;"><img src="{{data['h_logo']}}" height="50" width="50" /></td>
+        <!--
+        <td style="width:150px;margin-left:20px;"><img src="{{url_for('static', filename='HC-2.png')}}" height="50" width="50" /></td> -->
+        <td style="align-content:right; vertical-align: top;width:105px;">Permit: {{data['parking_tag_id']}}</td></tr>
+      <tr><td colspan="2"><h3>Tenant - {{data['tenant_id']}}</h3></td></tr>
+      
+      <tr><td class="label4" colspan=2>{{data['first_name']}}&nbsp;{{data['last_name']}}</td></tr>
+      <tr><td class="label4" colspan="2" style="margin-bottom:10px;">{{data['label']}}</td></tr>
+      <tr ><td class="label3" colspan="2">Expires</td></tr>
+      <tr><td colspan="2" class="label2">{{data["expiry"]}}</td></tr>
+    </table>
+  </td>
+  <td>&nbsp;</td>
+  <td>
+    <table style="border:1px solid gray; align-content: center; width:300px;height:355px;">
+      <tr>
+        <td style="width:145px;margin-left:20px;"><img src="{{data['h_logo']}}" height="50" width="50" /></td>
+        <td style="align-content:right; vertical-align: top;width:105px;">Permit: {{data['parking_tag_id']}}</td></tr>
+      <tr><td></td></tr>
+      <tr><td colspan="2"><h3>LOT</h3></td></tr>
+      <tr><td colspan=2 ><h2>{{data['parking_lot']}}</h2></td></tr>
+      <tr ><td class="label5" colspan="2">{{data["make"]}} {{data["model"]}}</td></tr>
+      <tr ><td class="label3" colspan="2">{{data['state']}} {{data["tag"]}}</td></tr>
+      <tr ><td class="label3" colspan="2">Expires</td></tr>
+      <tr><td colspan="2" class="label2">{{data["expiry"]}}</td></tr>
+    </table>
+  </td></tr>
+</table>
+
+</body>
+</html>

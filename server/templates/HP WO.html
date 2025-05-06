@@ -1,0 +1,233 @@
+<html>
+
+<body>
+<title>Himalaya Work order</title>
+<style>
+body {
+  //background-color: lightblue;
+}
+hr.title {
+  border-top: 2px solid black;
+}
+hr.solidB {
+  border-top: 1px solid black;
+}
+hr.solidG {
+  border-top: 1px solid #dfdfdf;
+}
+hr.dashedB {
+  border-top: 1px dashed black;
+}
+hr.dottedG {
+  border-top: 1px dotted gray;
+}
+h1 {
+  color: navy;
+  margin-left: 20px;
+  font-family: "Arial", Times, serif;
+}
+h2 {
+  color: solid gray;
+  text-align: center;
+  font-family: "Arial", Times, serif;
+  font-size:45px;
+}
+h3 {
+  color: black;
+  text-align: center;
+  font-family: "Arial", Times, serif;
+  font-size:30px;
+}
+.text-code {
+  width: 100%;
+  color: gray;
+  font-style: normal;
+  font-family: "Arial", Times, serif;
+  font-size:8px;
+}
+label {
+  width: 100%;
+  color: black;
+  font-style: normal;
+  font-family: "Arial", Times, serif;
+  font-size:12px;
+}
+text {
+  width: 100%;
+  color: black;
+  font-style: normal;
+  font-family: "Helvetica", Times, serif;
+  font-size:17px;
+}
+.table-header {
+  font-style: normal;
+  font-family: "Ariel", Times, serif;
+  font-size:22px;
+  border-bottom: 1px solid #dfdfdf;
+  padding-bottom: 10px;
+}
+.text-description {
+  font-style: normal;
+  font-family: "Ariel", Times, serif;
+  font-size:16px;
+}
+.text-info {
+  font-style: normal;
+  font-family: "Verdana", Times, serif;
+  font-size:10px;
+}
+</style>
+
+<img src="{{data['h_logo']}}" height="50" width="50" /><div style="text-align:center;vertical-align:middle;font-size:46px;">Himalaya Workorder</div>
+<hr class="title">
+<table>
+  <tr><td class="table-header">Property Information</td><td></td><td class="table-header">Tenant</td><td></td><td class="table-header">WO Details</td></tr>
+  <tr><td style="width:300px;vertical-align:top;">
+    <table>
+      <tr>
+        <td><label>Property</label></td>
+        <td><text>{{data['label']}}</text></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td><text>{{data['city']}}&nbsp;&nbsp;{{data['state']}}&nbsp;{{data['zip']}}</text></td>
+      </tr>
+      <tr>
+        <td><label>Status</label></td>
+        <td><text>{{data['p_status']}}</text></td>
+      </tr>
+      <tr>
+        <td><label>Type</label></td>
+        <td><text>{{data['p_type']}}</text></td>
+      </tr>
+      <tr>
+        <td><label>Key</label></td>
+        <td><text>{{data['key_code']}}</text></td>
+      </tr>
+      <tr>
+        <td><label>Directions</label></td>
+        <td><text>{{data['direction']}}</text></td>
+      </tr>
+    </table>
+  </td>
+  <td>&nbsp;</td>
+  <td style="width:300px;vertical-align:top;">
+    <table>
+      <tr>
+        <td ><label>Contact</label></td>
+        <td ><text>{{data['contact_name']}}</text></td></tr>
+      <tr>
+        <td><label>Phone</label></td>
+        <td><text> {{data['contact_info']}}</text></td>
+      </tr>
+      <tr>
+        <td><label>Tenant</label></td>
+        <td ><text>{{data['tenant']}}</text></td>
+      </tr>
+      <tr>
+        <td><label>Tenant Phone</label></td>
+        <td ><text>{{data['phone']}}</text></td>
+      </tr>
+      <tr>
+        <td><label>Permission to Enter</label></td>
+        <td ><text>{{data['entry']}}</text></td>
+      </tr>
+      <tr>
+        <td><label>Availability</label></td>
+        <td ><text>{{data['availability']}}</text></td>
+      </tr>
+      
+    </table>
+  </td>
+  <td>&nbsp;</td>
+  <td style="width:300px;vertical-align:top;">
+    <table>
+      <tr>
+        <td><label>Status</label></td>
+        <td><text>{{data['status_l']}}</text></td>
+      </tr>
+      <tr>
+        <td><label>Priority</label></td>
+        <td><text>{{data['priority_l']}}</text></td>
+      </tr>
+      <tr>
+        <td><label>Coordinator</label></td>
+        <td><text>{{data['coordinator_l']}}</text></td>
+      </tr>
+      <tr>
+        <td><label>Created</label></td>
+        <td><text>{{data['tdate']}}</text></td>
+      </tr>
+      <tr>
+        <td><label>Created By</label></td>
+        <td><text>{{data['createdby_l']}}</text></td>
+      </tr>
+      <tr>
+        <td><label>Scheduled</label></td>
+        <td><text>{{data['scheduled']}}</text></td>
+      </tr>
+      <tr>
+        <td><label>Assignee</label></td>
+        <td><text>{{data['owner']}}</text></td>
+      </tr>
+    </table>
+  </td></tr>
+</table>
+<hr class="solidB">
+<table style="width:950px;">
+  <tr><td colspan=2 class="table-header">Work order details</td></tr>
+  <tr>
+  <td><label>Issue</label></td>
+  <td><text style="color:red;">{{data["title"]}}</text></td>
+  </tr>
+  <tr>
+  <td class="table-header"><label>Description</label></td>
+  <td class="text-description table-header">{{data["description"]}}</td>
+  </tr>
+  <tr><td colspan=2><label>Work Performed</label></td></tr>
+  <tr><td colspan=2>&nbsp;</td></tr>
+  <tr><td colspan=2>&nbsp;</td></tr>
+  <tr><td colspan=2>&nbsp;</td></tr>
+  <tr><td colspan=2>&nbsp;</td></tr>
+  <tr><td colspan=2>&nbsp;</td></tr>
+  <tr><td colspan=2>&nbsp;</td></tr>
+  <tr><td colspan="2"><hr class="dottedG"></td></tr>
+  <tr>
+  <td colspan=1 style="width:375px;"><label>Tenant Signature&nbsp;&nbsp;&nbsp;&nbsp;Date</label></td>
+    <td colspan=1><label>Technician Signature&nbsp;&nbsp;&nbsp;&nbsp;Date</label></td>
+  </tr>
+</table>
+<br>
+<hr class="solidB">
+<table style="width:950px;">
+  <tr><td colspan=2 class="table-header">Office Use only</td></tr>
+  <tr><td>
+    <label>Work Start Time:</label></td><td><label>Work Complete time:</label>
+  </td></tr>
+  <tr><td colspan=2>
+    <label>Material Purchase:&nbsp;Yes / No&nbsp;&nbsp;&nbsp;Details:</label>
+  </td></tr>
+  <tr><td>
+    <label>Tenant Follow-up:&nbsp;Yes / No</label></td><td><label>&nbsp;</label>
+  </td></tr>
+</table>
+<h5>History</h5>
+  <table class="table">
+    <tr>
+      <th>Date</th>
+      <th>By</th>
+      <th>Description</th>
+    </tr>
+    {% for csl in data["wo_history"] %}
+    <tr class="text-info">
+      <td width="125px;">{{ csl["tdate"] }}</td>
+      <td width="75px;">{{ csl['updatedby'] }}</td>
+      <td>{{ csl['comments'] }}</td>
+    </tr>
+    {% endfor %}
+  </table> 
+<hr>
+<div class="text-code">Reference: W/{{data['wo_id']}}/P/{{data['property_id']}}/T/{{data['tenant_id']}}/{{data['tags']}}</div>
+</body>
+</html>
+

@@ -1,0 +1,242 @@
+<html>
+
+<body>
+<title>Himalaya Investor Statement</title>
+<style>
+body {
+  //background-color: lightblue;
+}
+hr.title {
+  border-top: 2px solid black;
+}
+hr.solidB {
+  border-top: 1px solid black;
+}
+hr.solidG {
+  border-top: 1px solid #dfdfdf;
+}
+hr.dashedB {
+  border-top: 1px dashed black;
+}
+hr.dottedG {
+  border-top: 1px dotted gray;
+}
+h1 {
+  color: navy;
+  margin-left: 20px;
+  font-family: "Arial", Times, serif;
+}
+h2 {
+  color: solid gray;
+  text-align: center;
+  font-family: "Arial", Times, serif;
+  font-size:45px;
+}
+h3 {
+  color: gray;
+  text-align: center;
+  font-family: "Arial", Times, serif;
+  font-size:26px;
+}
+h4 {
+  color: gray;
+  font-family: "Arial", Times, serif;
+  font-size:16px;
+}
+.text-code {
+  width: 100%;
+  color: gray;
+  font-style: normal;
+  font-family: "Arial", Times, serif;
+  font-size:8px;
+}
+label {
+  width: 100%;
+  color: black;
+  font-style: normal;
+  font-family: "Arial", Times, serif;
+  font-size:12px;
+}
+text {
+  width: 100%;
+  color: black;
+  font-style: normal;
+  font-family: "Arial", Times, serif;
+  font-size:16px;
+}
+.text-date {
+  color: black;
+  text-align: right;
+  font-style: normal;
+  font-family: "Arial", Times, serif;
+  font-size:14px;
+}
+.text-number {
+  color: black;
+  text-align: right;
+  font-style: normal;
+  font-family: "Arial", Times, serif;
+  font-size:14px;
+}
+.table-header {
+  font-style: normal;
+  font-family: "Ariel", Times, serif;
+  font-size:22px;
+  border-bottom: 1px solid #dfdfdf;
+  padding-bottom: 10px;
+}
+.text-description {
+  font-style: normal;
+  font-family: "Ariel", Times, serif;
+  font-size:16px;
+}
+.text-info {
+  font-style: normal;
+  font-family: "Verdana", Times, serif;
+  font-size:10px;
+}
+</style>
+
+<img src="{{data['h_logo']}}" height="50" width="50" /><div style="text-align:center;vertical-align:middle;font-size:36px;">Investor Statement</div>
+<hr class="title">
+<table>
+  <tr><td style="width:300px;vertical-align:top;" class="table-header">Investor Information</td><td></td><td style="width:300px;vertical-align:top;" class="table-header">Residence</td><td></td><td style="width:280px;vertical-align:top;" class="table-header">Financials</td></tr>
+  <tr><td style="vertical-align:top;">
+   <table style="width:100%">
+      <tr>
+        <td><label>Name</label></td>
+        <td style="align-text: right;" ><text>{{data['first_name']}} {{data['last_name']}}</text></td>
+      </tr>
+      <tr>
+        <td><label>Phone</label></td>
+        <td ><text>{{data['phone']}}</text></td>
+      </tr>
+      <tr>
+        <td><label>Email</label></td>
+        <td ><text>{{data['email']}}</text></td>
+      </tr>
+      <tr><td colspan=2>&nbsp;</td></tr>
+      <tr><td><label>Account</label></td>
+      <td ><text>{{data['account']}}</td></tr>      
+    </table>
+  </td>
+  <td>&nbsp;</td>
+  <td style="vertical-align:top;">
+    
+     <table style="width:100%">
+      <tr>
+        <td><label>Property</label></td>
+        <td><text>{{data['label']}}</text></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td><text>{{data['city']}}&nbsp;&nbsp;{{data['state']}}&nbsp;{{data['zip']}}</text></td>
+      </tr>
+      <tr>
+        <td><label>Lease Start</label></td>
+        <td class="text-date">{{data['lease_start_date']}}</td>
+      </tr>
+      <tr>
+        <td><label>Lease End</label></td>
+        <td class="text-date">{{data['lease_end_date']}}</td>
+      </tr>
+      <tr>
+        <td><label>Move In</label></td>
+        <td class="text-date">{{data['move_in_date']}}</td>
+      </tr>
+    </table>
+  </td>
+  <td>&nbsp;</td>
+  <td style="vertical-align:top">
+    <table style="width:100%">
+      <tr>
+        <td><label>Investment</label></td>
+        <td class="text-number">{{data['rent']}}</td>
+      </tr>
+      <tr>
+        <td><label>Equity</label></td>
+        <td class="text-number">{{data['deposit']}}</td>
+      </tr>
+      <tr>
+        <td><label>Last Payment</label></td>
+        <td class="text-number">{{data['last_payment']}}</td>
+      </tr>
+      <tr>
+        <td><label>Last Payment Date</label></td>
+        <td class="text-date">{{data['last_payment_date']}}</td>
+      </tr>
+    </table>
+  </td></tr>
+</table>
+<hr class="solidG">
+<div style="text-align: right;"> <label>Statement Date : {{data['statement_date']}}</label></div>
+<h3>Account</h3>
+<div style="align-content: center;">
+  <table class="table">
+    <tr>
+      <th>Type</th>
+      <th>Date</th>
+      <th>Occupancy</th>
+      <th>Income</th>
+      <th colspan=4>Expenses</th>
+      <th>NOI</th>
+      <th>Mortgage</th>
+      <th>Principal</th>
+      <th>Total</th>
+      <th>Distribution</th>
+      <th>Outstanding</th>
+    </tr>
+    <tr>
+      <th>&nbsp;</th>
+      <th>&nbsp;</th>
+      <th>&nbsp;</th>
+      <th>&nbsp;</th>
+      <th>Fixed</th>
+      <th>Operating</th>
+      <th>Management</th>
+      <th>Total</th>
+      <th>&nbsp;</th>
+      <th>&nbsp;</th>
+      <th>&nbsp;</th>
+      <th>Gain</th>
+      <th>&nbsp;</th>
+      <th>Debt</th>
+    </tr>
+    <tr class="text-info">
+      <td style="width:25px;text-align:center;"></td>
+      <td style="width:80px;text-align:center;">{{ data['carry_forward_date'] }}</td>
+      <td style="width:100px;"></td>
+      <td style="width:80px;text-align:right;"></td>
+      <td style="width:80px;text-align:right;"></td>
+      <td style="width:100px;text-align:right;">{{ data['carry_forward'] }}</td>
+      <th>&nbsp;</th>
+      <td>Carry Forward</td>
+    </tr>
+    {% for csl in data["transactions"] %}
+    <tr class="text-info">
+      <td style="width:25px;text-align:center;">{{ csl["type"] }}</td>
+      <td style="width:80px;text-align:center;">{{ csl["tdate"] }}</td>
+      <td style="width:100px;">{{ csl['category_l'] }}</td>
+      <td style="width:80px;text-align:right;">{{ csl['credit'] }}</td>
+      <td style="width:80px;text-align:right;">{{ csl['debit'] }}</td>
+      <td style="width:100px;text-align:right;">{{ csl['balance'] }}</td>
+      <th>&nbsp;</th>
+      <td>{{ csl['description'] }}</td>
+    </tr>
+    {% endfor %}
+  </table> 
+</div>
+<br>
+<h4>
+All questions : hi@himalayaproperties.org OR 646-780-5001</h4>
+<hr class="solidB">
+<br>
+<hr>
+
+<label>Disclaimer</label>
+<div class="text-disclaimer">
+The contents of this email and any attachments to it contain confidential and/or legally privileged information from {{data['company_legal_name']}}. This information is only for the use of the intended recipient. If you are not the intended recipient, you are hereby notified that any disclosure, copying, distribution, or the taking of any action in reliance on the contents of the contained information is strictly prohibited and that the documents should be returned to {{data['company_legal_name']}} immediately. In this regard, if you have received this email in error, please notify us immediately. 
+</div>
+</body>
+</html>
+

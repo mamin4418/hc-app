@@ -1,0 +1,133 @@
+<html>
+<body>
+<title>Himalaya Properties</title>
+<style>
+body {
+  //background-color: lightblue;
+}
+hr.title {
+  border-top: 2px solid black;
+}
+hr.solidB {
+  border-top: 1px solid black;
+}
+hr.solidG {
+  border-top: 1px solid #dfdfdf;
+}
+hr.dashedB {
+  border-top: 1px dashed black;
+}
+hr.dottedG {
+  border-top: 1px dotted gray;
+}
+
+label {
+  width: 100%;
+  color: black;
+  font-style: normal;
+  font-family: "Arial", Times, serif;
+  font-size:12px;
+}
+text {
+  width: 100%;
+  color: black;
+  font-style: normal;
+  font-family: "Arial", Times, serif;
+  font-size:16px;
+}
+.text-label {
+  color: black;
+  font-style: normal;
+  font-family: "Arial", Times, serif;
+  font-size:18px;
+}
+.text-general {
+  color: black;
+  text-align: right;
+  font-style: normal;
+  font-family: "Arial", Times, serif;
+  font-size:16px;
+}
+.text-red {
+  color: black;
+  text-align: right;
+  font-style: normal;
+  font-family: "Arial", Times, serif;
+  font-size:16px;
+}
+.text-description {
+  font-style: normal;
+  font-family: "Ariel", Times, serif;
+  font-size:16px;
+}
+.text-disclaimer {
+  font-style: normal;
+  font-family: "Verdana", Times, serif;
+  font-size:10px;
+}
+.text-code {
+  width: 100%;
+  color: gray;
+  font-style: normal;
+  font-family: "Arial", Times, serif;
+  font-size:8px;
+}
+</style>
+<img src="{{data['h_logo']}}" height="50" width="50" /><div style="text-align:center;vertical-align:middle;font-size:48px;color: red;">Rent Payments</div>
+<hr class="title">
+<div>&nbsp;</div>
+<div class="text-label">Dear {{data['first_name']}} {{data['last_name']}} and Family</div>
+<div><text>{{data['label']}}</text> </div>
+<div><text>{{data['city']}}&nbsp;&nbsp;{{data['state']}}&nbsp;{{data['zip']}}</text></div>
+<br>
+<br>
+<div >
+<div style="color:blue;font-size:16px;">
+PLEASE READ THIS CAREFULLY, IF YOU'RE USING VENMO OR CASH-APP TO PAY RENT.
+</div>
+<br>
+<div style="color:red;font-size:16px;">
+GOING FORWARD THERE WILL BE ADDITIONAL CHARGES UPTO 5% OF RENT, IF YOU USE VENMO OR CASH-APP.</div>
+<br>
+<br>
+Best Options:<br>
+1. Zelle (payments-ky@himalayaproperties.org)<br>
+2. Check / Money Order
+<br><br>
+You can continue to use Venmo / Cash APP, but please be mindful that you may be charged upto 5% fees to use this 3rd party servies going forward.
+<br><br>
+For Zelle, talk to you bank or Please let us know the bank you work with, And we may be able to help you.
+Banks in Bowling Green, KY with Zelle facility:
+<br>
+1. US Bank :  US Bank / Zelle [ https://www.usbank.com/online-mobile-banking/zelle-person-to-person-payments.html ]
+<br>
+2. PNC Bank : PNC Bank / Zelle [ https://www.pnc.com/en/personal-banking/banking/online-and-mobile-banking/zelle.html ]
+<br>
+3. Chase Bank: Chase / Zelle [ https://www.chase.com/personal/quickpay/login-quickpay ]
+<BR>
+4. USAA : USAA / Zelle [ https://www.usaa.com/inet/wc/mobile_banking_send_money_main?akredirect=true ]
+<BR>
+5. Farmers National Bank : FNB / Zelle [ https://www.farmersnb.com/Zelle.aspx ]
+<br>
+6. American Bank & Trust
+<br>
+7. Edmonton Savings Bank
+<br>
+<br>
+Additional Banks on Zelle : [ https://www.zellepay.com/get-started ]
+Sincerely,
+<br>
+<br><br>
+<div class="text-label">
+  Management
+</div>
+<hr class="solidB">
+<br>
+<label>Disclaimer</label>
+<div class="text-disclaimer">
+The contents of this email and any attachments to it contain confidential and/or legally privileged information from {{data['company_legal_name']}}. This information is only for the use of the intended recipient. If you are not the intended recipient, you are hereby notified that any disclosure, copying, distribution, or the taking of any action in reliance on the contents of the contained information is strictly prohibited and that the documents should be returned to {{data['company_legal_name']}} immediately. In this regard, if you have received this email in error, please notify us immediately. 
+</div>
+<div class="text-code">Reference: {{data['account']}}  {{data['company']}} {{data['company_address']}} {{data['company_address2']}} email: payments@himalayaproperties.org</div>
+</body>
+</html>
+

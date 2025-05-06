@@ -1,0 +1,105 @@
+<html>
+<body>
+<title>Himalaya Properties</title>
+<style>
+body {
+  //background-color: lightblue;
+  //background-image: linear-gradient(orange, black);
+}
+hr.title {
+  border-top: 2px solid black;
+}
+hr.solidB {
+  border-top: 1px solid black;
+}
+hr.solidG {
+  border-top: 1px solid #dfdfdf;
+}
+hr.dashedB {
+  border-top: 1px dashed black;
+}
+hr.dottedG {
+  border-top: 1px dotted gray;
+}
+
+label {
+  width: 100%;
+  color: black;
+  font-style: normal;
+  font-family: "Arial", Times, serif;
+  font-size:12px;
+}
+text {
+  width: 100%;
+  color: black;
+  font-style: normal;
+  font-family: "Arial", Times, serif;
+  font-size:16px;
+}
+.text-label {
+  color: black;
+  font-style: normal;
+  font-family: "Arial", Times, serif;
+  font-size:18px;
+}
+.text-general {
+  color: black;
+  text-align: right;
+  font-style: normal;
+  font-family: "Arial", Times, serif;
+  font-size:16px;
+}
+.amount-due-date {
+  color: black;
+  font-style: normal;
+  font-family: "Arial", Times, serif;
+  font-size:20px;
+}
+.amount-due {
+  color: red;
+  font-style: normal;
+  font-family: "Ariel", Times, serif;
+  font-size:20px;
+}
+.text-description {
+  font-style: normal;
+  font-family: "Ariel", Times, serif;
+  font-size:16px;
+}
+.text-disclaimer {
+  font-style: normal;
+  font-family: "Verdana", Times, serif;
+  font-size:10px;
+}
+.text-code {
+  width: 100%;
+  color: gray;
+  font-style: normal;
+  font-family: "Arial", Times, serif;
+  font-size:8px;
+}
+</style>
+
+<img src="C:/Users/ppare/Development/HC/HC-Server/static/thanksgiving-20211124.png" height="400" width="500"/>
+<br><br>
+Be safe and Stay healthy
+</div>
+<br>
+<br>
+<br>
+<div>
+HP Management
+</div><div>
+<img src="{{data['h_logo']}}" height="50" width="50" />
+</div>
+<br>
+<hr class="solidB">
+<br>
+<label>Disclaimer</label>
+<div class="text-disclaimer">
+The contents of this email and any attachments to it contain confidential and/or legally privileged information from Himalaya Properties. This information is only for the use of the intended recipient. If you are not the intended recipient, you are hereby notified that any disclosure, copying, distribution, or the taking of any action in reliance on the contents of the contained information is strictly prohibited and that the documents should be returned to Himalaya Properties immediately. In this regard, if you have received this email in error, please notify us immediately. 
+</div>
+<div class="text-code">Reference: {{data['account']}}  {{data['company']}} {{data['company_address']}} {{data['company_address2']}} email: hi@himalayaproperties.org</div>
+</body>
+</html>
+

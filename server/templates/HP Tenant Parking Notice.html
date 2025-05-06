@@ -1,0 +1,150 @@
+<html>
+
+<body>
+<title>Himalaya Properties</title>
+<style>
+body {
+  //background-color: lightblue;
+}
+hr.title {
+  border-top: 2px solid black;
+}
+hr.solidB {
+  border-top: 1px solid black;
+}
+hr.solidG {
+  border-top: 1px solid #dfdfdf;
+}
+hr.dashedB {
+  border-top: 1px dashed black;
+}
+hr.dottedG {
+  border-top: 1px dotted gray;
+}
+h1 {
+  color: navy;
+  margin-left: 20px;
+  font-family: "Arial", Times, serif;
+}
+h2 {
+  color: solid gray;
+  text-align: center;
+  font-family: "Arial", Times, serif;
+  font-size:20px;
+}
+h3 {
+  color: red;
+  text-align: center;
+  font-family: "Arial", Times, serif;
+  font-size:26px;
+}
+h4 {
+  color: red;
+  text-align: left;
+  font-family: "Arial", Times, serif;
+  font-size:20px;
+}
+.text-code {
+  width: 100%;
+  color: gray;
+  font-style: normal;
+  font-family: "Arial", Times, serif;
+  font-size:8px;
+}
+label {
+  width: 100%;
+  color: black;
+  font-style: strong;
+  font-family: "Arial", Times, serif;
+  font-size:12px;
+}
+text {
+  width: 100%;
+  color: black;
+  font-style: normal;
+  font-family: "Arial", Times, serif;
+  font-size:16px;
+}
+.text-description {
+  font-style: normal;
+  font-family: "Ariel", Times, serif;
+  font-size:16px;
+}
+.text-disclaimer {
+  font-style: normal;
+  font-family: "Verdana", Times, serif;
+  font-size:10px;
+}
+</style>
+<a href="https://www.himalayaproperties.org">
+<img src="{{data['h_logo']}}" height="50" width="50" /></a><div style="text-align:center;vertical-align:middle;font-size:36px;font-family:'Arial', Times, serif;">{{data['company_name']}}</div>
+<hr class="solidG">
+<br>
+<h3>
+PARKING AT THE PROPERTY
+</h3>
+<br>
+<br>
+<text>
+<div style="align-content: left;font-weight: bold;">
+Dear {{data['first_name']}} {{data['last_name']}},
+</div>
+</text>
+<div>&nbsp;</div>
+<text>
+We hope that this email finds you well.
+We are sending this message to ensure that everyone gets at-least one parking at all times. All vehicles are parked safely and do not interfere with other tenants or movements for our contractors. Any parked vehicle not complying with any of the following conditions will be towed at the owner's expense.
+</text>
+<br>
+<h4>
+TENANT MUST ADHERE TO THE FOLLOWING RULES WHEN PARKING AT THE PROPERTY</b>
+</h4>
+
+<text>1. Vehicle is legally registered and have proper tag plates.</text>
+<br>
+<text>2. Vehicle has a valid and active insurance.</text>
+<br>
+<text>3. Vehicle has no big vehicle damage.</text>
+<br>
+<text>4. Vehicle is in working condition and can move.</text>
+<br>
+<text>5. Vehicle is parked in properly in a marked parking spot.</text>
+<br>
+<text>6. Guest vehicle(s) is/are parked on the street.</text>
+<br>
+<br>
+<text style="color: blue;">
+If you have any questions or have vehicles with any conditions, please inform the office at support@himalayaproperties.org otherwise, it may be towed.
+</text>
+<hr>
+<div class="text-description">
+<STRONG>IF YOU ARE UNSURE, PLEASE CALL/TEXT JD AT 270-779-9686 OR OFFICE AT 646-780-5001</STRONG>
+<br>
+<br>
+<STRONG>COMMUNICATION AND HELP</STRONG>
+<br>
+<br>Please use our website to report all issues: <a href="https://himalayaproperties.org">https://www.himalayaproperties.org</a>
+<br>Contact email: <a href="mailto:support@himalayaproperties.org">support@himalayaproperties.org</a>
+<br><br>
+<STRONG>Our Main Office Number: 646-780-5001 (you can text or call)</STRONG><br>
+Email/Text are best method to communicate as it will help us track your request and provide regular updates independently.
+<br>
+</div>
+<br>
+<div class="text-description" style="font-style: bold;">
+It is very important that we have your full and correct contact information all the time. If your contact information have changed, please send your updated contact information to : <a href="mailto:support@himalayaproperties.org">support@himalayaproperties.org</a>
+</div>
+<br><br>
+<h2>{{data['company_legal_name']}}</h2>
+<label><a href="https://www.himalayaproperties.org">https://www.himalayaproperties.org</a></label>
+<hr class="solidB">
+<br>
+<label>Disclaimer</label>
+<div class="text-disclaimer">
+The contents of this email and any attachments to it contain confidential and/or legally privileged information from {{data['company_legal_name']}}. This information is only for the use of the intended recipient. If you are not the intended recipient, you are hereby notified that any disclosure, copying, distribution, or the taking of any action in reliance on the contents of the contained information is strictly prohibited and that the documents should be returned to {{data['company_legal_name']}} immediately. In this regard, if you have received this email in error, please notify us immediately. 
+</div>
+
+<div class="text-code">Reference: {{data['reference']}}</div>
+</body>
+</html>
+

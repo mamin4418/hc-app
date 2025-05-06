@@ -1,0 +1,47 @@
+{
+    "description": "configuration file for server",
+    "windows": {
+        "description": "Windows Configuration File",
+        "log_dir": "C:/Users/mamin/Documents/Paresh/HC-Server/log",
+        "log_file": "hp-server.log",
+        "logo_print": "C:/Users/mamin/Documents/Paresh/HC-Server/static/HC-4.png",
+        "logo_html": "C:/Users/mamin/Documents/Paresh/HC-Server/static/HC-4.png",
+        "logo_zelle": "C:/Users/mamin/Documents/Paresh/HC-Server/static/zelle.jpg",
+        "logo_venmo": "C:/Users/mamin/Documents/Paresh/HC-Server/static/venmo.png",
+        "logo_cashapp": "C:/Users/mamin/Documents/Paresh/HC-Server/static/cashapp.png",        
+        "print_server": "C:/Program Files/wkhtmltopdf/bin/wkhtmltopdf.exe",
+        "name": "LOCAL",
+        "server_port": "7000",
+        "db": {
+            "host": "localhost",
+            "port": "3306",
+            "user": "root",
+            "pass": "New1york!",
+            "schema": "pm"
+        },
+        "upload_folder": "C:\\Users\\mamin\\Documents\\Paresh\\HC-Server\\data",
+        "allowed_extensions": ["txt", "pdf", "png", "jpg", "jpeg", "gif", "doc", "docx", "xlsx"]
+    },
+    "windows-dev": {
+        "description": "Windows Dev Configuration File",
+        "log_dir": "C:/Users/mamin/Documents/Paresh/HC-Server/log",
+        "log_file": "hp-dev-server.log",
+        "logo_print": "C:/Users/mamin/Documents/Paresh/HC-Server/static/HC-4.png",
+        "logo_html": "C:/Users/mamin/Documents/Paresh/HC-Server/static/HC-4.png",
+        "logo_zelle": "C:/Users/mamin/Documents/Paresh/HC-Server/static/zelle.jpg",
+        "logo_venmo": "C:/Users/mamin/Documents/Paresh/HC-Server/static/venmo.png",
+        "logo_cashapp": "C:/Users/mamin/Documents/Paresh/HC-Server/static/cashapp.png",
+        "print_server": "C:/Program Files/wkhtmltopdf/bin/wkhtmltopdf.exe",
+        "name": "LOCAL",
+        "server_port": "7000",
+        "db": {
+            "host": "localhost",
+            "port": "3306",
+            "user": "root",
+            "pass": "New1york!",
+            "schema": "pm"
+        },
+        "upload_folder": "C:/Users/mamin/Documents/Paresh/HC-Server/data",
+        "allowed_extensions": ["txt", "pdf", "png", "jpg", "jpeg", "gif", "doc", "docx", "xlsx"]
+    }
+}

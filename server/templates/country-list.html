@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block title %}
+    <h1>Country Information</h1>
+{% endblock %}
+{% block content %}
+    <table class="table">
+      <tr>
+        <th>Country ID</th>
+        <th>Name</th>
+        <th>Short Name</th>
+        <th>Create Time</th>
+      </tr>
+      {% for csl in csl %}
+      <tr>
+        <td>
+          <a href="/country/{{ csl["id"] }}">
+            {{ csl["NCT_ID"] }}
+          </a>
+        </td>
+        <td>
+          <a href="/country/{{ csl["id"] }}">
+            {{ csl["NAME"] }}
+          </a>
+        </td>
+        <td>
+          <a href="/country/{{ csl["id"] }}">
+            {{ csl["brieftitle"] }}
+          </a>
+        </td>
+        <td>{{ csl["startdate"] }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+{% endblock %}

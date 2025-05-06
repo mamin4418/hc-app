@@ -1,0 +1,122 @@
+<html>
+<body>
+<title>Himalaya Tenant Statement</title>
+<style>
+body {
+  //background-color: lightblue;
+}
+hr.title {
+  border-top: 2px solid black;
+}
+hr.solidB {
+  border-top: 1px solid black;
+}
+hr.solidG {
+  border-top: 1px solid #dfdfdf;
+}
+hr.dashedB {
+  border-top: 1px dashed black;
+}
+hr.dottedG {
+  border-top: 1px dotted gray;
+}
+
+label {
+  width: 100%;
+  color: black;
+  font-style: normal;
+  font-family: "Arial", Times, serif;
+  font-size:12px;
+}
+text {
+  width: 100%;
+  color: black;
+  font-style: normal;
+  font-family: "Arial", Times, serif;
+  font-size:16px;
+}
+.text-label {
+  color: black;
+  font-style: normal;
+  font-family: "Arial", Times, serif;
+  font-size:18px;
+}
+.text-general {
+  color: black;
+  text-align: right;
+  font-style: normal;
+  font-family: "Arial", Times, serif;
+  font-size:16px;
+}
+.amount-due-date {
+  color: black;
+  font-style: normal;
+  font-family: "Arial", Times, serif;
+  font-size:20px;
+}
+.amount-due {
+  color: red;
+  font-style: normal;
+  font-family: "Ariel", Times, serif;
+  font-size:20px;
+}
+.text-description {
+  font-style: normal;
+  font-family: "Ariel", Times, serif;
+  font-size:16px;
+}
+.text-disclaimer {
+  font-style: normal;
+  font-family: "Verdana", Times, serif;
+  font-size:10px;
+}
+.text-code {
+  width: 100%;
+  color: gray;
+  font-style: normal;
+  font-family: "Arial", Times, serif;
+  font-size:8px;
+}
+</style>
+<img src="{{data['h_logo']}}" height="50" width="50" /><div style="text-align:center;vertical-align:middle;font-size:30px;">Tenant Statement</div>
+<hr class="title">
+<label>Statement Date : {{data['statement_date']}}</label>
+<div>&nbsp;</div>
+<div class="text-label">Dear {{data['first_name']}} {{data['last_name']}}</div>
+<div><text>{{data['label']}}</text> </div>
+<div><text>{{data['city']}}&nbsp;&nbsp;{{data['state']}}&nbsp;{{data['zip']}}</text></div>
+<br>
+<div class="text-description">
+  {{data['description']}}<br>{{data['description2']}}
+</div>
+<br>
+<div class="amount-due"><label>Amount Due : $ </label>{{data['amount_due']}}</div>
+<div class="amount-due"><label>Due Date : </label>{{data['due_date']}}</div>
+<br>
+<div class="text-description">Account : <label>{{data['account']}}</label></div>
+<br>
+<div>
+<table>
+  <tr style="text-align:left;font-weight:bold;text-decoration:underline;">
+  <td style="width:300px">Mail payment to:</td><td></td><td>Pay electronically:&nbsp;</td><td></td>
+</tr>
+<tr>
+  <td>{{data['company_address2']}}</td><td>&nbsp;</td><td class="text-label">Zelle:[Preferred]</td><td> {{data['company_zelle']}}</td>
+</tr>
+<tr>
+  <td style="width:300px;" class="text-label">{{data['company']}}</td><td>&nbsp;</td><td class="text-label">CashApp:&nbsp;</td><td>{{data['company_cash_app']}}</td>
+</tr>
+</table>
+</div>
+<br>
+<div class="text-description>">Your payment must reach us within 5 days of the due date.</div>
+<div class="text-description>">You may pay additional charge while using 3rd party electronic pay systems.</div>
+<hr class="solidB">
+<br>
+<label>Disclaimer</label>
+<div class="text-disclaimer">
+The contents of this email and any attachments to it contain confidential and/or legally privileged information from {{data['company_legal_name']}}. This information is only for the use of the intended recipient. If you are not the intended recipient, you are hereby notified that any disclosure, copying, distribution, or the taking of any action in reliance on the contents of the contained information is strictly prohibited and that the documents should be returned to {{data['company_legal_name']}} immediately. In this regard, if you have received this email in error, please notify us immediately.
+</div>
+<div class="text-code">Reference: {{data['account']}}  {{data['company']}} {{data['company_address']}} {{data['company_address2']}} email: payments@himalayaproperties.org</div>
+</body>
+</html>
