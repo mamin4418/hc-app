@@ -1,0 +1,6 @@
+INFO|2020-09-28 10:15:50,977|pm-web.py|<module>|L:3091|HP Server started: INFO 
+WARNING|2020-09-28 10:15:50,977|pm-web.py|<module>|L:3092|HP Server started:W
+WARNING|2020-09-28 10:15:50,991|_internal.py|_log|L:113| * Debugger is active!
+INFO|2020-09-28 10:15:50,999|_internal.py|_log|L:113| * Debugger PIN: 598-466-183
+INFO|2020-09-28 10:15:51,030|_internal.py|_log|L:113| * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO|2020-09-28 10:19:27,759|_internal.py|_log|L:113| * Detected change in 'C:\\Users\\ppare\\Development\\HC\\hc-server\\pm_update.py', reloading
